@@ -177,7 +177,7 @@ def getSynonymRecommendations(word, sentence, lg):
     return [r[1] for r in recommendations]
 
 
-def isGeneric(word, lg, generic_threshold = 50.2):#Synonym count distribution: mean = 6.7, stdev = 14.5 (using 3 std. deviations significance)
+def isGeneric(word, lg, generic_threshold = 65):#Synonym count distribution: mean = 6.7, stdev = 14.5 (using ~4 std. deviations significance)
 
     synonyms = [s for s in lg.edges(word, keys=True) if s[2] == "synonym"]
 
