@@ -106,7 +106,7 @@ def recommend_synonyms(sentence, lg):
             #Otherwise, offer all synonyms in order of relevance
             else:
                 if (len(recommendations) > 1):
-                    print("\nOther recommendations include:", recommendations[1:])
+                    print("\nOther recommendations include:", recommendations[1:10])
                     print("\nWould you like to use one of these? [y/n]")
                 else:
                     print("\nNo other recommendations")
